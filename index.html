@@ -8,8 +8,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
     <title>Frontend Mentor | Ping coming soon page</title>
-
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <style>
       .attribution {
         font-size: 11px;
@@ -20,5 +21,25 @@
       }
     </style>
   </head>
-  <body></body>
+  <body>
+    <section>
+      <svg class="logo" width="86" height="26" xmlns="http://www.w3.org/2000/svg">
+        <text transform="translate(-677 -86)" fill="none" fill-rule="evenodd" font-family="LibreFranklin-Bold, Libre Franklin" font-size="32" font-weight="bold">
+          <tspan x="675" y="111" fill="#15202A">PING</tspan>
+          <tspan x="756.312" y="111" fill="#4C7BF3">.</tspan>
+        </text>
+      </svg>
+      <h1>We are launching soon!</h1>
+      <small>Subscribe and get notified</small>
+      <form action="#">
+        <input type="email" name="email" id="email" />
+        <button class="button">Notify Me</button>
+      </form>
+    </section>
+
+    <footer>
+      <p class="attribution">&copy; Copyright Ping. All rights reserved.</p>
+      <p class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.</p>
+    </footer>
+  </body>
 </html>
