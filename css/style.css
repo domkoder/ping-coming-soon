@@ -1,5 +1,167 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,600&display=swap');
 
+:root {
+  /* Primary Color*/
+  --blue: hsl(223, 87%, 63%);
+
+  /* Secondary Color*/
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+
+  /* Natural Color */
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: 'Libre Franklin', sans-serif;
+  font-size: 1rem;
+}
+
+.container {
+  padding: 2rem 1rem;
+  max-width: 500px;
+  text-align: center;
+  margin: auto;
+}
+
+.logo {
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.heading {
+  font-weight: 300;
+  color: var(--gray);
+}
+
+.heading span {
+  font-weight: 600;
+  color: var(--very-dark-blue);
+}
+
+.sub-heading {
+  font-size: 0.8rem;
+  color: var(--very-dark-blue);
+}
+
+.container form {
+  padding: 1rem;
+}
+
+.form-control {
+  /* padding: 1.5rem 1.5rem; */
+  margin-bottom: 0.7rem;
+  width: 100%;
+}
+
+.form-control input,
+.button {
+  font-family: inherit;
+  width: 100%;
+  padding: 0.8rem 1.8rem;
+  border-radius: 40px;
+  outline: none;
+  display: block;
+}
+
+.form-control input {
+  border: 1px solid var(--blue);
+}
+
+.button {
+  color: white;
+  border: none;
+  background: var(--blue);
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px 0px var(--pale-blue);
+}
+
+.button:hover {
+  background-color: hsl(223, 86%, 67%);
+}
+
+.image {
+  margin: 3rem 0;
+}
+
+.form-control small {
+  display: none;
+  padding: 0.5rem;
+  font-size: 0.7rem;
+  color: var(--light-red);
+}
+
+/* error */
+.form-control.error input {
+  border-color: var(--light-red);
+}
+
+.form-control.error small {
+  display: block;
+}
+
+/* footer styling */
+footer .social {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+footer .social i {
+  margin: 0.3rem;
+  padding: 0.5rem;
+  color: var(--blue);
+  border: 1px solid var(--pale-blue);
+  border-radius: 20px;
+}
+
+footer .social i:hover {
+  color: white;
+  background-color: var(--blue);
+}
+
+footer small {
+  display: block;
+  color: var(--gray);
+}
+
+/* Normal screen */
+@media (min-width: 769px) {
+  .container {
+    max-width: 700px;
+    padding: 2rem 2rem;
+  }
+
+  /* .form-control {
+    display: inline-block;
+    height: 100px;
+  } */
+
+  .container form {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .form-control {
+    flex: 3;
+  }
+
+  .button {
+    flex: 1;
+    margin-left: 1rem;
+  }
+
+  .form-control small {
+    text-align: left;
+    font-size: 0.8rem;
+    padding-left: 2rem;
+  }
+
+  .image {
+    margin: 2rem 0;
+  }
 }
